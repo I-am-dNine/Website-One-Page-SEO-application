@@ -3,11 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website One Page SEO Application</title>
+    <title>Website One Page SEO Analyzer</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <h1>Website One Page SEO Application</h1>
+    <header>
+        <h1>Website One Page SEO Analyzer</h1>
+        <p>Enter a URL to analyze its on-page SEO metrics.</p>
+    </header>
+
+    <main>
+        <form id="seo-form">
+            <input type="url" id="url-input" placeholder="https://example.com" required>
+            <button type="submit">Analyze</button>
+        </form>
+
+        <div id="loading-indicator" style="display: none;">
+            <p>Analyzing...</p>
+        </div>
+
+        <section id="results-container" class="hidden"></section>
+    </main>
+
     <script src="../../js/main.js"></script>
 </body>
 </html>
